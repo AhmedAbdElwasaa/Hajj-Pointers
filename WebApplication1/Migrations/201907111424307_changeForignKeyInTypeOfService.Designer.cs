@@ -7,13 +7,13 @@ namespace WebApplication1.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class test1 : IMigrationMetadata
+    public sealed partial class changeForignKeyInTypeOfService : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(test1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(changeForignKeyInTypeOfService));
         
         string IMigrationMetadata.Id
         {
-            get { return "201907110839179_test1"; }
+            get { return "201907111424307_changeForignKeyInTypeOfService"; }
         }
         
         string IMigrationMetadata.Source

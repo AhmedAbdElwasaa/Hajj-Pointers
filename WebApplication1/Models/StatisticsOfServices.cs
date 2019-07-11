@@ -6,8 +6,8 @@ using System.Web;
 
 namespace WebApplication1.Models
 {
-    [Table("Pointer_Services")]
-    public class PointerOfServices
+    [Table("Statistics_Services")]
+    public class StatisticsOfServices
     {
         public int Id { get; set; }
         public string Office_Name { get; set; }

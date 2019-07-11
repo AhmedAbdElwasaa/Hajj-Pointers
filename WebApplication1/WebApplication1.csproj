@@ -207,19 +207,38 @@
     <Compile Include="BLL\TypeOfServiceManager.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API\HomeController.cs" />
+    <Compile Include="Controllers\API\SectorsController.cs" />
+    <Compile Include="Controllers\API\TypeOfSectorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Dto\CityDto.cs" />
     <Compile Include="Dto\MainDto.cs" />
     <Compile Include="Dto\OfficeDto.cs" />
+    <Compile Include="Dto\SectorsPageDto.cs" />
     <Compile Include="Dto\ServiceDto.cs" />
     <Compile Include="Dto\TypeDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201907110839179_test1.cs" />
-    <Compile Include="Migrations\201907110839179_test1.Designer.cs">
-      <DependentUpon>201907110839179_test1.cs</DependentUpon>
+    <Compile Include="Migrations\201907111240424_firstmigration.cs" />
+    <Compile Include="Migrations\201907111240424_firstmigration.Designer.cs">
+      <DependentUpon>201907111240424_firstmigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907111318296_addingSectorsAndTypeOfSectors.cs" />
+    <Compile Include="Migrations\201907111318296_addingSectorsAndTypeOfSectors.Designer.cs">
+      <DependentUpon>201907111318296_addingSectorsAndTypeOfSectors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907111414016_MakeNumberNullableInTypeOfSectorTable.cs" />
+    <Compile Include="Migrations\201907111414016_MakeNumberNullableInTypeOfSectorTable.Designer.cs">
+      <DependentUpon>201907111414016_MakeNumberNullableInTypeOfSectorTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907111424307_changeForignKeyInTypeOfService.cs" />
+    <Compile Include="Migrations\201907111424307_changeForignKeyInTypeOfService.Designer.cs">
+      <DependentUpon>201907111424307_changeForignKeyInTypeOfService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907111455203_makeTheTableStatistisOfSectors.cs" />
+    <Compile Include="Migrations\201907111455203_makeTheTableStatistisOfSectors.Designer.cs">
+      <DependentUpon>201907111455203_makeTheTableStatistisOfSectors.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -227,8 +246,11 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Offices.cs" />
-    <Compile Include="Models\PointerOfServices.cs" />
+    <Compile Include="Models\StatisticsOfSectors.cs" />
+    <Compile Include="Models\StatisticsOfServices.cs" />
+    <Compile Include="Models\Sectors.cs" />
     <Compile Include="Models\Services.cs" />
+    <Compile Include="Models\TypeOfSector.cs" />
     <Compile Include="Models\TypeOfService.cs" />
     <Compile Include="Models\UnitOfWork.cs" />
     <Compile Include="Models\UserRate.cs" />
@@ -323,8 +345,20 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907110839179_test1.resx">
-      <DependentUpon>201907110839179_test1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201907111240424_firstmigration.resx">
+      <DependentUpon>201907111240424_firstmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907111318296_addingSectorsAndTypeOfSectors.resx">
+      <DependentUpon>201907111318296_addingSectorsAndTypeOfSectors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907111414016_MakeNumberNullableInTypeOfSectorTable.resx">
+      <DependentUpon>201907111414016_MakeNumberNullableInTypeOfSectorTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907111424307_changeForignKeyInTypeOfService.resx">
+      <DependentUpon>201907111424307_changeForignKeyInTypeOfService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907111455203_makeTheTableStatistisOfSectors.resx">
+      <DependentUpon>201907111455203_makeTheTableStatistisOfSectors.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

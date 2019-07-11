@@ -42,9 +42,13 @@ namespace WebApplication1.Models
         }
         public DbSet<Cities> Cities { get; set; }
         public DbSet<Offices> Offices { get; set; }
-        public DbSet<Services> Services{ get; set; }
+        public DbSet<Services> Services { get; set; }
         public DbSet<TypeOfService> TypeOfService { get; set; }
+        public DbSet<Sectors> Sectors { get; set; }
+        public DbSet<TypeOfSector> TypeOfSector { get; set; }
         public DbSet<UserRate> UserRate { get; set; }
-        public DbSet<PointerOfServices> PointerOfServices { get; set; }
+        public DbSet<StatisticsOfServices> StatisticsOfServices { get; set; }
+        public DbSet<StatisticsOfSectors> StatisticsOfSectors { get; set; }
+        
     }
 }

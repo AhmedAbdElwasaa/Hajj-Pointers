@@ -16,11 +16,12 @@ namespace WebApplication1.BLL
         {
             this.context = context;
         }
-        public UnitOfWork UnitOfWork {
+        public UnitOfWork UnitOfWork
+        {
             get
             {
                 return HttpContext.Current.GetOwinContext().Get<UnitOfWork>();
             }
-                }
+        }
     }
 }
